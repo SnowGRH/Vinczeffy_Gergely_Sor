@@ -13,9 +13,9 @@ main {
     width: 80%;
     max-width: 1000px;
     margin: 0 auto 0 auto;
-    background-color: #010101;
+    background-color: #020202;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: "h h"
                          "a n"
                          "f f";
@@ -26,18 +26,44 @@ header{
     background-size: cover;
     width: 100%;
     height: 300px;
-    font-size: 32px;
+    font-size: 30px;
     text-align: left;
     letter-spacing: 4px;
     text-transform: uppercase;
+    padding: auto;
+    font-weight: bold;
+    font-family: Garamond;
 }
 article{
     grid-area: a;
     width: 100%;
     text-align: justify;
-    font-size: 13px;
-    padding: 5px;
+    font-size: 10px;
+    padding: 10px;
     overflow: auto;
+
+    
+}
+#artgrid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "sz1 sz1"
+                         "im2 fr1";
+}
+article>h1 {
+    grid-area: sz1;
+    font-size: 20px;
+    padding: 0 0 10px 0;
+}
+img {
+    grid-area: im2;
+    float: left;
+    width: 80%;
+}
+article>ul {
+    grid-area: fr1;
+}
+article>ul>li{
+    list-style-type: square;
 }
 nav{
     grid-area: n;
