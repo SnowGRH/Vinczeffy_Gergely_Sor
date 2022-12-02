@@ -1,32 +1,32 @@
-body{
-    background-image: url("//kep/teglafal.jpg");
-}
-main,header,nav,footer{
+* {
     box-sizing: border-box;
     font-family: Arial, Verdana, sans-serif;
     color: beige;
     font-size: 10pt;
     margin: 0;
+    padding: 0;
 }
-main{
-    width: 80%;    
+body {
+    background: url("kep/teglafal.jpg");
+}
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    background-color: #010101;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: "h h h"
-    "ar ar n"
-    "f f f";
-    max-height: 1000px;
-    align-items: center;
-    background-color: #333333;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "h h"
+                         "a n"
+                         "f f";
 }
 header{
     grid-area: h;
-    height: 300px;
-    background-size:cover;
-
+    background-image: url("kep/beer-new_401732638.jpg");
+    background-size: cover;
 }
 article{
-    grid-area: ar;
+    grid-area: a;
 }
 nav{
     grid-area: n;
