@@ -26,9 +26,18 @@ header{
     background-size: cover;
     width: 100%;
     height: 300px;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 article{
     grid-area: a;
+    width: 100%;
+    text-align: justify;
+    font-size: 13px;
+    padding: 5px;
+    overflow: auto;
 }
 nav{
     grid-area: n;
