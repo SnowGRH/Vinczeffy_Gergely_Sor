@@ -45,6 +45,7 @@ article{
     
 }
 #artgrid{
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "sz1 sz1"
                          "im2 fr1";
