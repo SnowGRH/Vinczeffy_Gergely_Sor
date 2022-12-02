@@ -22,8 +22,10 @@ main {
 }
 header{
     grid-area: h;
-    background-image: url("kep/beer-new_401732638.jpg");
+    background-image: url("beer-new_401732638.jpg");
     background-size: cover;
+    width: 100%;
+    height: 300px;
 }
 article{
     grid-area: a;
