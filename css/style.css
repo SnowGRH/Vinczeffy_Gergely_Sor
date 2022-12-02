@@ -1,0 +1,36 @@
+body{
+    background-image: url("//kep/teglafal.jpg");
+}
+main,header,nav,footer{
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    margin: 0;
+}
+main{
+    width: 80%;    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "h h h"
+    "ar ar n"
+    "f f f";
+    max-height: 1000px;
+    align-items: center;
+    background-color: #333333;
+}
+header{
+    grid-area: h;
+    height: 300px;
+    background-size:cover;
+
+}
+article{
+    grid-area: ar;
+}
+nav{
+    grid-area: n;
+}
+footer{
+    grid-area: f;
+}
