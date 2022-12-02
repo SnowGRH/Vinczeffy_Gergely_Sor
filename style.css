@@ -7,7 +7,7 @@
     padding: 0;
 }
 body {
-    background: url("kep/teglafal.jpg");
+    background: url("teglafal.jpg");
 }
 main {
     width: 80%;
@@ -50,7 +50,7 @@ article{
     grid-template-areas: "sz1 sz1"
                          "im2 fr1";
 }
-article>h1 {
+article>div>h1 {
     grid-area: sz1;
     font-size: 20px;
     padding: 0 0 10px 0;
@@ -63,7 +63,7 @@ img {
 article>ul {
     grid-area: fr1;
 }
-article>ul>li{
+article>div>ul>li{
     list-style-type: square;
 }
 nav{
