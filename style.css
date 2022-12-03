@@ -61,8 +61,11 @@ img {
     float: left;
     width: 80%;
 }
-article>ul {
+article>div>ul {
     grid-area: fr1;
+    padding-right: 5px;
+    text-align: left;
+    
 }
 article>div>ul>li{
     list-style-type: square;
@@ -102,3 +105,28 @@ footer{
     font-size: 20px;
     line-height: 35px;
 }
+article>h1{
+    font-size: 15px;
+    margin-bottom: 1%;
+}
+table{
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+}
+th, td{
+    border-left: solid;
+    border-width: 1px;
+}
+table .color{
+    background-color: gray;
+}
+@media only screen and (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "h""n""a""f";
+    }
+    table {
+        width: 300px;
+    }
+  }
